@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* line-height: 1rem; */
+    /* background-color: antiquewhite; */
+}
+button{
+    background-color: #454545;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    
+}
+p{
+    font-size: 17px;
+}
+.container{
+    max-width: 960px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+/*Header Area CSS*/
+.header-area{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.header-title{
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#main-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 20px;
+}
+.mini-menu ul{
+    list-style: none;
+    display: flex;
+}
+.mini-menu ul li{
+     margin-left: 20px;
+     padding: 0;
+}
+
+.mini-menu ul li a{
+      text-decoration: none;
+      font-size: 17px;
+      margin: 0;
+}
+
+/*Hero Area css*/
+.hero-area{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#main-hero-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top:20px ;
+}
+.hero-area-texts{
+    /* width: 70%; */
+     margin-top: 100px;
+}
+.hero-area-texts h3{
+margin-bottom: 10px;
+}
+.hero-area-texts h1{
+margin: 25px 0;
+}
+.hero-area-texts p{
+margin-bottom: 15px;
+}
+.hero-img{
+    height: 380px;
+    border-radius: 50%;
+}
+
+/*Service Area CSS*/
+.service-area{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#main-service-area{
+    margin: 40px 0;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+}
+.servise{
+     width: 30%;
+}
+.subtitle-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.subtitle-text p{
+     color: yellowgreen;
+     
+}
+.servise h3{
+    margin: 5px 0;
+}
+.servise p{
+     margin-bottom: 20px;
+}
+.servise img{
+     width: 40px;
+}
+/*Portfolio Area CSS*/
+.portfolios{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #454545; */
+}
+.portfolio{
+    background-color: #454545;
+    padding: 15px; 
+    border-radius: 10px;
+    margin: 0 15px;
+}
+.portfolio h3{
+     margin: 15px 0;
+}
