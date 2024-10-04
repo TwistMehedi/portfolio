@@ -3,10 +3,10 @@
     padding: 0;
     font-family: sans-serif;
     /* line-height: 1rem; */
-    /* background-color: antiquewhite; */
+    background-color: rgb(219, 219, 219);
 }
 button{
-    background-color: #454545;
+    background-color: #5c5761;
     color: #fff;
     padding: 10px;
     border-radius: 10px;
@@ -36,7 +36,7 @@ p{
 #main-header{
     display: flex;
     justify-content: space-between;
-    background-color: bisque;
+    background-color: rgb(221, 218, 221);
     padding: 20px;
 }
 .mini-menu ul{
@@ -52,6 +52,14 @@ p{
       text-decoration: none;
       font-size: 17px;
       margin: 0;
+       color: rgb(15, 15, 15);
+      padding: 5px 10px;
+      
+}
+
+.mini-menu ul li a:hover{
+       background-color: #c9c2c8;
+       border-radius: 15px;
 }
 
 /*Hero Area css*/
@@ -80,7 +88,7 @@ margin: 25px 0;
 margin-bottom: 15px;
 }
 .hero-img{
-    height: 380px;
+    
     border-radius: 50%;
 }
 
@@ -96,6 +104,7 @@ margin-bottom: 15px;
 .services{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .servise{
      width: 30%;
@@ -105,7 +114,7 @@ margin-bottom: 15px;
     margin-bottom: 50px;
 }
 .subtitle-text p{
-     color: yellowgreen;
+     color: rgb(4, 11, 14);
      
 }
 .servise h3{
@@ -115,8 +124,59 @@ margin-bottom: 15px;
      margin-bottom: 20px;
 }
 .servise img{
-     width: 40px;
+     /* width: 40px; */
 }
+/*Education Area*/
+.edu-header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#main-edu-header{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 15px;
+}
+.educations{
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #c2c0c5;
+    border-radius: 10px;
+}
+.education{
+   margin: 20px 0;
+   padding: 10px;
+   border-radius: 5px;
+
+}
+.education h1{
+     margin-bottom: 14px;
+}
+.skills-area{
+    background-color: #c2c0c5;
+    margin: 25px 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+.skills-area h1{
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Skills{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.progress{
+    height: 30px;
+    width: 100%;
+    border:3px solid #c2c0c5;
+    border-radius: 5px;
+}
+
 /*Portfolio Area CSS*/
 .portfolios{
     display: flex;
@@ -124,11 +184,54 @@ margin-bottom: 15px;
     /* background-color: #454545; */
 }
 .portfolio{
-    background-color: #454545;
+    background-color: #c2c0c5;
     padding: 15px; 
     border-radius: 10px;
     margin: 0 15px;
 }
+.portfolio p{
+  
+     padding: 10px;
+     border-radius: 5px;
+}
 .portfolio h3{
      margin: 15px 0;
+     padding: 10px;
+     border-radius: 5px;
+}
+/*Footer Area*/
+.footer-area{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#main-footer-area{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,3fr));
+    gap: 10rem;
+    margin-top: 2.5rem;
+}
+ 
+.footer input{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 250px;
+}
+.footer textarea{
+  height: 100px;
+  width: 250px;
+  margin: 5px 0;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+ 
+}
+ 
+.footer ul{
+  list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    line-height: 2.5rem;
 }
