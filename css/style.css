@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    /* line-height: 1rem; */
     background-color: rgb(219, 219, 219);
+    overflow-x:hidden;
+    
 }
 button{
     background-color: #5c5761;
@@ -20,46 +21,68 @@ p{
     max-width: 960px;
     width: 96%;
     margin: 0 auto;
+     
 }
 
 /*Header Area CSS*/
-.header-area{
-    margin: 0;
-    padding: 0;
+
+nav{ 
+    height: 80px;
+}
+nav::-webkit-scrollbar{
+    display: none;
+}
+nav img{
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 14.4%;
+    border-radius: 50%;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav ul li a{
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+}
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
     width: 100%;
+    background: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
 }
-.header-title{
-    font-size: 17px;
-    font-weight: bold;
+nav ul li a:hover:before{
+     transform: scaleX(1);
+     transform-origin: left;
+}
+
+label #btn,
+label #cancel{
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
     cursor: pointer;
+    color: #000;
+    display: none;
 }
-#main-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(221, 218, 221);
-    padding: 20px;
-}
-.mini-menu ul{
-    list-style: none;
-    display: flex;
-}
-.mini-menu ul li{
-     margin-left: 20px;
-     padding: 0;
-}
-
-.mini-menu ul li a{
-      text-decoration: none;
-      font-size: 17px;
-      margin: 0;
-       color: rgb(15, 15, 15);
-      padding: 5px 10px;
-      
-}
-
-.mini-menu ul li a:hover{
-       background-color: #c9c2c8;
-       border-radius: 15px;
+#check{
+    display: none;
 }
 
 /*Hero Area css*/
@@ -69,8 +92,8 @@ p{
     padding: 0;
 }
 #main-hero-area{
-    display: flex;
-    justify-content: space-between;
+     display: grid;
+     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 10px;
     margin-top:20px ;
 }
@@ -105,12 +128,27 @@ margin-bottom: 15px;
     justify-content: space-around;
     align-items: center;
 }
-.servise{
-     width: 30%;
+.servise {
+      background-color: #c2c0c5;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+}
+.servise img{
+      background-color: #c2c0c5;
+      padding: 5px;
+      border-radius: 10px;
+}
+ 
+.servise p{
+     
+     border-radius: 5px;
+     padding: 5px;
 }
 .subtitle-text{
     text-align: center;
     margin-bottom: 50px;
+
 }
 .subtitle-text p{
      color: rgb(4, 11, 14);
@@ -118,10 +156,13 @@ margin-bottom: 15px;
 }
 .servise h3{
     margin: 5px 0;
+    border-radius: 5px;
+    padding: 5px;
 }
 .servise p{
      margin-bottom: 20px;
 }
+/*Education Css*/
 .edu-header{
     margin: 0;
     padding: 0;
@@ -176,7 +217,7 @@ margin-bottom: 15px;
 .portfolios{
     display: flex;
     justify-content: space-between;
-    /* background-color: #454545; */
+    
 }
 .portfolio{
     background-color: #c2c0c5;
@@ -201,10 +242,9 @@ margin-bottom: 15px;
     width: 100%;
 }
 #main-footer-area{
-    display: grid;
-    grid-template-columns: repeat(3,minmax(0,3fr));
-    gap: 10rem;
-    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
 }
  
 .footer input{
@@ -212,6 +252,7 @@ margin-bottom: 15px;
   border: 1px solid;
   border-radius: 5px;
   width: 250px;
+  display: block;
 }
 .footer textarea{
   height: 100px;
@@ -220,6 +261,7 @@ margin-bottom: 15px;
   border: 1px solid;
   border-radius: 5px;
   padding: 10px;
+  display: block;
  
 }
  

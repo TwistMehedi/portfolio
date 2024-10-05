@@ -1,13 +1,134 @@
-/*Responsive For Mobile Phone*/
-@media only screen and (min-width: 480px) and (max-width:812px) {
-    /*Hero Area Responsive*/
+  /*Responsive For Tablet*/
+  @media only screen and (min-width:200px) and (max-width:991px){
+   /*Nav*/
+   nav img{
+      left: 9%;
+      top: 5px;
+      width: 80px;
+      border-radius: 50%;
+
+     }
+     label #btn{
+      display: block;
+     }
+     nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #333;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all.5s;;
+     }
+     nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+     }
+   
+     #check:checked ~ ul{
+       left: 0;
+     }
+     #check:checked ~ label #btn{
+        display: none;
+     }
+     #check:checked ~ label #cancel{
+        display: block;
+     }
+
+
+/*Service Area*/
+.services {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+     
+  }
+  .servise {
+   max-width: 100%;
+} 
+
+/*Hero area*/
+.hero-img{
+   width: 300px;
+   height: 300px;
+}
+.hero-area-texts {
+   margin-top: 50px;
+}
+
+/*Portfolio Area*/
+.portfolios{
+   display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.portfolio{
+   margin: 10px 10px;
+}
+.port-img{
+   width: 235px;
+}
+
+/*Fotter Area*/
+#main-footer-area {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   gap: 2.5rem;
+    
+}
+  } 
+  
+/*Responsive For Mobile*/
+@media only screen and (min-width: 200px) and (max-width:600px) {
+   /*Nav*/
+  nav img{
+   left: 12%;
+   top: 10px;
+   width: 70px;
+    border-radius: 50px;
+  }
+  label #btn{
+   display: block;
+  }
+  nav ul{
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background: #333;
+   top: 80px;
+   left: -100%;
+   text-align: center;
+   transition: all.5s;;
+  }
+  nav ul li{
+   display: block;
+   margin: 50px 0;
+   line-height: 30px;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+     display: none;
+  }
+  #check:checked ~ label #cancel{
+     display: block;
+  }
+
+/*Hero Area*/
      #main-hero-area{
         display: inline-block;
         text-align: center;
+        margin-top: -30px;
      }
      .hero-img{
-         margin: 15px 0;
-     }
+      text-align: center;
+       margin-top: 5px;
+  }
+  .hero-area-texts{
+   width: 100%;
+  }
      /*Service Area Responsive*/
      .services{
         display: inline-block;
@@ -63,8 +184,4 @@
      }
   }
 
-  /*Responsive For Tablet*/
-  @media only screen and (min-width:768px) and (max-width:1280){
-
-     
-  }
+ 
